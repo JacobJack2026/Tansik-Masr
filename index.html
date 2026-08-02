@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="اعرف الكليات المناسبة لمجموعك في مصر." />
+  <title>تنسيق مصر | دليلك للكليات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="login-page">
+  <header class="site-header">
+    <nav class="nav container" aria-label="التنقل الرئيسي">
+      <a class="brand" href="#top" aria-label="تنسيق مصر"><span class="brand-mark">ت</span><span>تنسيق مصر<small>Tansiq
+            Egypt</small></span></a>
+      <button class="menu-button" type="button" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+      <div class="nav-area"><a href="#calculator">حاسبة الكليات</a><a href="#how-it-works">كيف تعمل؟</a><a
+          href="#about">عن المنصة</a></div>
+      <div class="auth-actions"><button class="button button-ghost" data-open-modal="login">تسجيل الدخول</button><button
+          class="button button-primary" data-open-modal="register">إنشاء حساب</button></div>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">خطوتك الأولى نحو المستقبل</span>
+          <h1>اعرف الكليات الأقرب إلى <em>طموحك</em></h1>
+          <p>أنشئ حسابًا أو سجّل دخولك أولًا، ثم انتقل إلى صفحة حساب التقدير والكليات المناسبة.</p><button type="button"
+            class="button button-light" data-open-modal="register">ابدأ الآن ←</button>
+        </div>
+        <aside class="hero-card" aria-label="معلومة"><span>✓</span>
+          <div><strong>نتيجة واضحة خلال ثوانٍ</strong>
+            <p>ترشيحات استرشادية سهلة المقارنة</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="calculator-section container" id="calculator">
+      <div class="section-heading"><span class="eyebrow">حاسبة التنسيق</span>
+        <h2>ما هي الخيارات المناسبة لك؟</h2>
+        <p>استخدم بياناتك الفعلية للحصول على قائمة ترشيحات مبدئية.</p>
+      </div>
+      <form id="calculatorForm" class="calculator-card" novalidate>
+        <div class="field"><label for="score">مجموعك <span aria-hidden="true">*</span></label><input id="score"
+            name="score" type="number" min="0" max="500" placeholder="مثال: 288" required /><small>الدرجة التي حصلت
+            عليها</small></div>
+        <div class="field"><label for="total">المجموع الكلي <span aria-hidden="true">*</span></label><select id="total"
+            name="total" aria-describedby="totalHint">
+            <option value="320">320 درجة</option>
+            <option value="410">410 درجة</option>
+          </select><small id="totalHint">يتغير تلقائيًا حسب النظام المختار</small></div>
+        <div class="field"><label for="system">نظام الثانوية <span aria-hidden="true">*</span></label><select id="system" name="system">
+            <option value="newSystem">النظام الجديد (320 درجة)</option>
+            <option value="oldSystem">النظام القديم (410 درجة)</option>
+          </select></div>
+        <div class="field"><label for="decline">سيناريو توقع التنسيق</label><select id="decline" name="decline">
+            <option value="0">بدون تغيير عن 2025</option>
+            <option value="0.5">انخفاض 0.5%</option>
+            <option value="1" selected>انخفاض 1%</option>
+          </select></div>
+        <div class="field"><label for="section">الشعبة <span aria-hidden="true">*</span></label><select id="section"
+            name="section">
+            <option value="SCIENCE">علمي علوم</option>
+            <option value="MATH">علمي رياضة</option>
+            <option value="LITERARY">أدبي</option>
+          </select></div>
+        <div class="field"><label for="governorate">المحافظة</label><select id="governorate" name="governorate">
+            <option>القاهرة</option>
+            <option>الجيزة</option>
+            <option>الإسكندرية</option>
+            <option>المنيا</option>
+            <option>أسيوط</option>
+            <option>الشرقية</option>
+            <option>القليوبيه</option>
+            <option>اسوان</option>
+            <option>الاقصر</option>
+            <option>بني سويف</option>
+            <option>الفيوم</option>
+            <option>دمياط</option>
+            <option>البحيره</option>
+            <option>الغربيه</option>
+            <option>الدقهليه</option>
+            <option>المنوفيه</option>
+            <option>كفر الشيخ</option>
+            <option>الاسماعيليه</option>
+            <option>بور سعيد</option>
+            <option>السويس</option>
+            <option>سوهاج</option>
+            <option>قنا</option>
+            <option>مطروح</option>
+            <option>شمال سيناء</option>
+            <option>جنوب سيناء</option>
+            <option>البحر الاحمر</option>
+            <option>الوادي الجديد</option>
+          </select></div>
+        <div class="field"><label for="universityType">نوع الجامعة <span aria-hidden="true">*</span></label><select
+            id="universityType" name="universityType">
+            <option value="PUBLIC">حكومية</option>
+            <option value="PRIVATE">خاصة</option>
+            <option value="PRIVATE">اهلية</option>
+          </select></div>
+        <button class="button button-primary submit-button" type="submit"><span>اعرض الكليات المناسبة</span><span
+            class="loader" hidden></span></button>
+      </form>
+      <p id="formMessage" class="form-message" role="alert"></p>
+      <section id="results" class="results" hidden aria-live="polite">
+        <div class="results-header">
+          <div><span class="eyebrow">نتيجتك</span>
+            <h2>الكليات المقترحة</h2>
+          </div>
+          <div class="score-pill">نسبتك <strong id="percentage">0%</strong></div>
+        </div>
+        <p class="notice" id="notice"></p>
+        <div id="collegeList" class="college-list"></div>
+      </section>
+    </section>
+    <section class="steps" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered"><span class="eyebrow">ببساطة</span>
+          <h2>كيف تستخدم المنصة؟</h2>
+        </div>
+        <div class="step-grid">
+          <article><b>1</b>
+            <h3>أدخل بياناتك</h3>
+            <p>المجموع والشعبة ونوع الجامعة الذي يناسبك.</p>
+          </article>
+          <article><b>2</b>
+            <h3>نحلل النتيجة</h3>
+            <p>نقارن نسبتك بالحدود الاسترشادية المتاحة.</p>
+          </article>
+          <article><b>3</b>
+            <h3>استكشف خياراتك</h3>
+            <p>راجع الكليات المناسبة وابحث أكثر قبل القرار.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="about">
+    <div class="container footer-content"><a class="brand" href="#top"><span class="brand-mark">ت</span><span>تنسيق
+          مصر<small>دليلك الاسترشادي</small></span></a>
+      <p>الترشيحات استرشادية ولا تحل محل إعلان التنسيق الرسمي.</p><span>© <span id="year"></span> تنسيق مصر</span>
+    </div>
+  </footer>
+  <dialog id="authModal" class="modal"><button class="close-modal" aria-label="إغلاق">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+  <template id="loginTemplate">
+    <h2>مرحبًا بعودتك</h2>
+    <p>سجّل دخولك لمتابعة اختياراتك.</p>
+    <form class="auth-form" data-auth="login"><label>البريد الإلكتروني<input name="email" type="email"
+          required /></label><label>كلمة المرور<input name="password" type="password" minlength="6"
+          required /></label><button class="button button-primary">تسجيل الدخول</button></form>
+  </template>
+  <template id="registerTemplate">
+    <h2>أنشئ حسابك</h2>
+    <p>احفظ اختياراتك وارجع إليها متى شئت.</p>
+    <form class="auth-form" data-auth="register"><label>الاسم<input name="name" type="text" maxlength="80"
+          required /></label><label>البريد الإلكتروني<input name="email" type="email" required /></label><label>كلمة
+        المرور<input name="password" type="password" minlength="6" required /></label><button
+        class="button button-primary">إنشاء حساب</button></form>
+  </template>
+  <script src="assets/data/government-2025.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
